@@ -13,7 +13,7 @@ public class HomeWorks {
 
     @BeforeClass
     public void setUp(){
-        wd = new ChromeDriver;
+        wd = new ChromeDriver();
         wd.get("https://telranedu.web.app/login");
     }
 
@@ -71,15 +71,5 @@ public class HomeWorks {
         WebElement t1 = wd.findElement(By.cssSelector("[placeholder ^= 'Pass']"));
         WebElement t2 = wd.findElement(By.cssSelector("[placeholder $= 'ord']"));
         WebElement t3 = wd.findElement(By.cssSelector("[placeholder *= 'ass']"));
-
-
-
-
-
-
-
-
     }
-
-
 }
