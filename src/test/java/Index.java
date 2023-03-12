@@ -2,6 +2,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -14,7 +15,9 @@ public class Index {
 
     @BeforeClass
     public void setup(){
-        wd = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--remote-allow-origins=*");
+        wd = new ChromeDriver(options);
         wd.get("file:///C:/Users/Olena/Desktop/index.html");
     }
 
@@ -24,12 +27,7 @@ public class Index {
         WebElement canada = wd.findElement(By.cssSelector("tr:nth-child(3)>td:last-child"));
 
         Assert.assertEquals(canada.getText(),"Canada");
-
-
-
     }
-
-
 
     @Test
     public void cssLocators(){
@@ -57,8 +55,6 @@ public class Index {
         //by attribute
         WebElement divElm = wd.findElement(By.cssSelector("[class ='container']"));
         WebElement inputEmail = wd.findElement(By.cssSelector("[placeholder='Type your name']"));
-
-
 
     }
 }
