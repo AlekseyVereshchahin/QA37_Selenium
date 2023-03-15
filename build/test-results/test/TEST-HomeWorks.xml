@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="HomeWorks" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-13T17:26:14" hostname="HOME-PC" time="0.048">
+<testsuite name="HomeWorks" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-15T11:12:07" hostname="HOME-PC" time="0.146">
   <properties/>
-  <testcase name="classwork2" classname="HomeWorks" time="0.048"/>
+  <testcase name="classwork2" classname="HomeWorks" time="0.146"/>
   <system-out><![CDATA[Login
+______________
+LoginRegistration
+______________
+PHONEBOOK
+HOME
+ABOUT
+LOGIN
+
+LoginRegistration
+text br->
 ]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 111.0.5563.19 (378a38865270d286695aeb86f190564911ef7bc2-refs/branch-heads/5563@{#251}) on port 21075
+  <system-err><![CDATA[Starting ChromeDriver 111.0.5563.19 (378a38865270d286695aeb86f190564911ef7bc2-refs/branch-heads/5563@{#251}) on port 25853
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-бер. 13, 2023 7:26:08 ПП org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+бер. 15, 2023 1:12:06 ПП org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 111, so returning the closest version found: 108
 ]]></system-err>
 </testsuite>

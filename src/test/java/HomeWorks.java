@@ -108,7 +108,7 @@ public class HomeWorks {
         //parent
         WebElement el1 = wd.findElement(By.xpath("//h1/parent::*"));
         WebElement el2 = wd.findElement(By.xpath("//h1/parent::div"));
-        WebElement el3 = wd.findElement(By.xpath("//h1/..*"));
+        WebElement el3 = wd.findElement(By.xpath("//h1/.."));
 
         //ancestor предки
         WebElement el4 = wd.findElement(By.xpath("//h1/ancestor::*"));
@@ -131,7 +131,25 @@ public class HomeWorks {
     public void classwork2(){
         WebElement element = wd.findElement(By.cssSelector("[name = 'login']"));
         String text = element.getText();
+        // for printing command sout
         System.out.println(text);
+
+        WebElement form = wd.findElement(By.xpath("//form"));
+        String textForm=form.getText();
+        System.out.println("______________");
+        System.out.println(textForm);
+
+        WebElement html = wd.findElement(By.tagName("html"));
+        String textall=html.getText();
+        System.out.println("______________");
+        System.out.println(textall);
+
+        WebElement br = wd.findElement(By.tagName("br"));
+        System.out.println("text br->"+br.getText());
+
+
+
+
 
     }
 
